@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Distirct Data Collection Exercise Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "9d2ee9a0c33648a7b9de57def141922c": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "marker_color": "lightblue",
+        "name": "university",
+        "options": []
+      }
+    },
+    "6ec9546609c6475e800d07f572393d55": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "marker_color": "lightgreen",
+        "name": "medkit",
+        "options": []
+      }
+    },
+    "706107835037429d852b7279cfd2a50e": {
+      "model_name": "LeafletIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_size": [
+          30,
+          30
+        ],
+        "icon_url": "icons/charity.png",
+        "options": [
+          "icon_anchor",
+          "icon_size",
+          "icon_url",
+          "popup_anchor",
+          "shadow_anchor",
+          "shadow_size",
+          "shadow_url"
+        ],
+        "popup_anchor": [
+          0,
+          0
+        ]
+      }
+    },
+    "c907e575b607455b845e9a68be1675e3": {
+      "model_name": "LeafletIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_size": [
+          30,
+          30
+        ],
+        "icon_url": "icons/signal-tower.png",
+        "options": [
+          "icon_anchor",
+          "icon_size",
+          "icon_url",
+          "popup_anchor",
+          "shadow_anchor",
+          "shadow_size",
+          "shadow_url"
+        ],
+        "popup_anchor": [
+          0,
+          0
+        ]
+      }
+    },
+    "e344fbcca68b4da49e1ee85a1840ea7c": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "2af6b09f7d5c4fb7ae5255352055003f": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "78a62bd2e24b421d849cdc9484ccbd80": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "b286ae1a630346f5915876d8b1840b05": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "1000px"
+      }
+    },
+    "435b4891e0ee4504a9fa0ef78f072e86": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "b7a6bafccf564037ae08f87a3fe7b9f4": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "center": [
+          5.6984,
+          -0.6066
+        ],
+        "controls": [
+          "IPY_MODEL_f0706674a94e48b19c1de7ce7bb74129",
+          "IPY_MODEL_b7416d0d962c44dba7b07dd2fed841f0",
+          "IPY_MODEL_332e391d9a074ab789824843416fbbd7"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_e344fbcca68b4da49e1ee85a1840ea7c",
+        "dragging_style": "IPY_MODEL_2af6b09f7d5c4fb7ae5255352055003f",
+        "layers": [
+          "IPY_MODEL_78a62bd2e24b421d849cdc9484ccbd80",
+          "IPY_MODEL_1f759274ceda40b1b0a1d9dd93b4639b"
+        ],
+        "layout": "IPY_MODEL_b286ae1a630346f5915876d8b1840b05",
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "style": "IPY_MODEL_435b4891e0ee4504a9fa0ef78f072e86",
+        "zoom": 8.0
+      }
+    },
+    "f0706674a94e48b19c1de7ce7bb74129": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "b7416d0d962c44dba7b07dd2fed841f0": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "a9e91ee280e84776b51964886a7355c4": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.553947852421547,
+          -0.5311294258249541
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "AHENTIA D/A BASIC SCHOOL (Primary)"
+      }
+    },
+    "e3991a90a40e45fb9e385b4ece0fff1c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.553947852421547,
+          -0.5311294258249541
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "AHENTIA D/A BASIC SCHOOL (JHS)"
+      }
+    },
+    "75ce88d8f365457bb77b08e4f062ee5e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.569639129467871,
+          -0.5443426802015261
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "CHOCHOE ST. JOHN'S ANGLICAN BASIC SCHOOL"
+      }
+    },
+    "fc15487d10624220a0fa7e4e4cea0889": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.717934946807444,
+          -0.5308873476767765
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "FIANKO METHODIST D/A BASIC SCHOOL (PRIMARY)"
+      }
+    },
+    "2652f6c629cf41f9bddc0ff052b7a844": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.706388120251823,
+          -0.5381190941274822
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "OKWABENA S.D.A BASIC SCHOOL"
+      }
+    },
+    "d93ea671ebc74b2287dbf6c83989ac9b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.684595264556591,
+          -0.5568347744336574
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BAWJIASE D/A BASIC 'A' SCHOOL"
+      }
+    },
+    "5394ce6e47bc48239dfe1b5d4bddff47": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.684595264556591,
+          -0.5568347744336574
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BAWJIASE D/A BASIC 'B' SCHOOL"
+      }
+    },
+    "4d142cd2ce8a42e59d633b2a0829c37a": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.688865257366346,
+          -0.5598935402127091
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "OMEGA SCHOOLS \u2013 BAWJIASE"
+      }
+    },
+    "36d8e0c86c844154947a25a091d48560": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.452870290570503,
+          -0.5612555779520679
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BAWJIASE SENIOR HIGH SCHOOL"
+      }
+    },
+    "5fcfd09c32374524b7c3947b4f4ba7ae": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.59476124302542,
+          -0.551978360227334
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "ABERFUL D/A BASIC SCHOOL"
+      }
+    },
+    "4fece3a9b7f6474482915c92c3010821": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.599798904654088,
+          -0.559273779607835
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONTRASE CATHOLIC BASIC SCHOOL"
+      }
+    },
+    "7968391073bc4b4a86614c64696d441c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.60688572621135,
+          -0.5529653398820223
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONTRASE D/A BASIC 'A' SCHOOL (Primary)"
+      }
+    },
+    "0b20831ef6264baf81bcb624ca5885f6": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.609586431606654,
+          -0.5525481110014248
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONTRASE D/A BASIC 'A' SCHOOL (JHS)"
+      }
+    },
+    "0ec977c2f15e4af79c6fc1fa3f205a8e": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.608928988106104,
+          -0.5531101893620057
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONTRASE ST. FRANCIS ANGLICAN BASIC SCHOOL"
+      }
+    },
+    "8449ad9a64d14feaaaea39e4d5a7f051": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.602511192339477,
+          -0.5443320086726058
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONTRASE SENIOR HIGH TECHNICAL  SCHOOL"
+      }
+    },
+    "8900432996b54764bd64ce807294ac39": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.617948564769906,
+          -0.572442288033197
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "AKRABONG D/A BASIC SCHOOL"
+      }
+    },
+    "5ba46f839d09466a9d49066ea4025a6c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.66025224890972,
+          -0.5733671137993007
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "ATWER-BABIANIHA-ODUMASE D/A BASIC SCHOOL"
+      }
+    },
+    "2b62f7fd355d420fb7dd75e86d0f04f7": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.639398169264399,
+          -0.5619778127961648
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BEWUANUM ST. PAUL'S ANGLICAN BASIC SCHOOL"
+      }
+    },
+    "ba970d6bb5384b688bd439d2b588a42d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.668476419211572,
+          -0.5645718385077968
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "KWAMAN  D/A  BASIC SCHOOL"
+      }
+    },
+    "04281826929940b9958a05065546b326": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.6314460621605225,
+          -0.5753635808366109
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "MFAFO D/A BASIC SCHOOL"
+      }
+    },
+    "199cea00b5fd4fee937e8bdae6f8ca1c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.637287858249311,
+          -0.5695741981522056
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "ROYAL EDUCATIONAL COMPLEX"
+      }
+    },
+    "3f119d8e06b648209f429994b6a6c10b": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.63659037803842,
+          -0.5648856172870842
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "GREAT FAITH PREPARATORY SCHOOL"
+      }
+    },
+    "c67902977ce644a5901e0100180e30ce": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.653324676759025,
+          -0.5832033669557157
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "OBRACHIRE D/A BASIC 'A' SCHOOL"
+      }
+    },
+    "83c2a8f7ce0e4504b7ae435931a0bd75": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.653324676759025,
+          -0.5832033669557157
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "OBRACHIRE D/A BASIC 'B' SCHOOL"
+      }
+    },
+    "ace5c600344d4f049a3b42e8cfa2631c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.659051818469565,
+          -0.5824216921156138
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "OBRACHIRE SENIOR HIGH SCHOOL"
+      }
+    },
+    "4038ee4f64944238b5415dd7ec6d2fd0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.4271633259778,
+          -0.5142544599233162
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONSUOKU REV. DR. ERIKSSON D/A  BASIC SCHOOL (PRIMARY)"
+      }
+    },
+    "8e22deb04ee6455087decd74def4ba22": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.420418739394024,
+          -0.526953051613207
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONSUOKU REV. DR. ERIKSSON D/A  BASIC SCHOOL (JHS)"
+      }
+    },
+    "1e61806dc2884ad4b7291bf217c043cf": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.425435124563814,
+          -0.5203851285869139
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SPIRROW EDUCATION COMPLEX"
+      }
+    },
+    "79fa71e65c5349238e5a31481e1d4032": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.410679338223243,
+          -0.5058176610965273
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA SENIOR HIGH SCHOOL"
+      }
+    },
+    "f418c37edd3540409c7870d753c9d1a3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.409313685515052,
+          -0.4946407077789817
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "PETUDUASE T.I AHMADIYYA BASIC SCHOOL"
+      }
+    },
+    "bf9b6a8f77e64f5e8543afa2e73f387c": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.383158136290974,
+          -0.4969123580660041
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA A.M.E ZION A' BASIC SCHOOL  / 'B' J.H.S"
+      }
+    },
+    "7e679dc3abd14657a22de4bbaa3270a9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.394186447893498,
+          -0.49300751120221026
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "ROYAL UNITY ACADEMY"
+      }
+    },
+    "afe2a3af6baf4d378929ea67f77100b0": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.396194995450045,
+          -0.4957136638996356
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "JANE QUARSHIE HAPPY HOME PREPARATORY SCHOOL"
+      }
+    },
+    "389f8f200e4743b9be3f7fdd6a319145": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.392135145559331,
+          -0.49747077481249913
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA D/A BASIC 'A' SCHOOL"
+      }
+    },
+    "02be38243094484e8f1ca57c38582844": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.392132601409219,
+          -0.4990489206883143
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA D/A BASIC 'B' SCHOOL"
+      }
+    },
+    "6de0926820634e9eb1340c387fbd4ec3": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.39818822360277,
+          -0.49470448579567766
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA METHODIST A/B  BASIC SCHOOL"
+      }
+    },
+    "969253e3eae046a3952bc9bbe6d0f712": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.390813299608612,
+          -0.49910843049098097
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA MOTHER TERESA SCHOOL FOR GIRLS BASIC SCHOOL"
+      }
+    },
+    "753bb829857d4bc78f9b7ce812002358": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.3985811088791005,
+          -0.5001226941120845
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA SALVATION ARMY BASIC SCHOOL"
+      }
+    },
+    "9b81dfe6005b4c5c9172dd7b71781b77": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.385977499879601,
+          -0.49899295315277786
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA ST. ANTHONY CATHOLIC BASIC SCHOOL"
+      }
+    },
+    "8722cd5a50cd4448ab0dfadc31800dff": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_9d2ee9a0c33648a7b9de57def141922c",
+        "location": [
+          5.39682355211504,
+          -0.4947191079482326
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SOLID ROCKSTARS ACADEMY"
+      }
+    },
+    "dbd256dd28b84486a2af457732ff8364": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6ec9546609c6475e800d07f572393d55",
+        "location": [
+          5.4274437408638985,
+          -0.5121159163534111
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "BONSOUKU COMPOUND"
+      }
+    },
+    "586b2a2a2d2d4d54a25b19cbda1d74a9": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6ec9546609c6475e800d07f572393d55",
+        "location": [
+          5.390227570379878,
+          -0.49733430448891364
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "SENYA HEALTH CENTER"
+      }
+    },
+    "d54d915f17b240f4bcd9970e91a979d8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_6ec9546609c6475e800d07f572393d55",
+        "location": [
+          5.387603590770922,
+          -0.4900316006699549
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "CASTLE CHPS"
+      }
+    },
+    "b3833aec0e914e7486343d996dcc1dab": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c907e575b607455b845e9a68be1675e3",
+        "location": [
+          5.387227011913497,
+          -0.49734659354031496
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Tower A"
+      }
+    },
+    "3f239c14762d4763ba50c9416f850175": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c907e575b607455b845e9a68be1675e3",
+        "location": [
+          5.384368129678188,
+          -0.49664589020838656
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Tower B"
+      }
+    },
+    "942f4473f63640bfb3fb91c4a176cc0d": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "draggable": false,
+        "icon": "IPY_MODEL_c907e575b607455b845e9a68be1675e3",
+        "location": [
+          5.396069469646915,
+          -0.4959576639324823
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ],
+        "title": "Tower C"
+      }
+    },
+    "1f759274ceda40b1b0a1d9dd93b4639b": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [
+          "IPY_MODEL_a9e91ee280e84776b51964886a7355c4",
+          "IPY_MODEL_e3991a90a40e45fb9e385b4ece0fff1c",
+          "IPY_MODEL_75ce88d8f365457bb77b08e4f062ee5e",
+          "IPY_MODEL_fc15487d10624220a0fa7e4e4cea0889",
+          "IPY_MODEL_2652f6c629cf41f9bddc0ff052b7a844",
+          "IPY_MODEL_d93ea671ebc74b2287dbf6c83989ac9b",
+          "IPY_MODEL_5394ce6e47bc48239dfe1b5d4bddff47",
+          "IPY_MODEL_4d142cd2ce8a42e59d633b2a0829c37a",
+          "IPY_MODEL_36d8e0c86c844154947a25a091d48560",
+          "IPY_MODEL_5fcfd09c32374524b7c3947b4f4ba7ae",
+          "IPY_MODEL_4fece3a9b7f6474482915c92c3010821",
+          "IPY_MODEL_7968391073bc4b4a86614c64696d441c",
+          "IPY_MODEL_0b20831ef6264baf81bcb624ca5885f6",
+          "IPY_MODEL_0ec977c2f15e4af79c6fc1fa3f205a8e",
+          "IPY_MODEL_8449ad9a64d14feaaaea39e4d5a7f051",
+          "IPY_MODEL_8900432996b54764bd64ce807294ac39",
+          "IPY_MODEL_5ba46f839d09466a9d49066ea4025a6c",
+          "IPY_MODEL_2b62f7fd355d420fb7dd75e86d0f04f7",
+          "IPY_MODEL_ba970d6bb5384b688bd439d2b588a42d",
+          "IPY_MODEL_04281826929940b9958a05065546b326",
+          "IPY_MODEL_199cea00b5fd4fee937e8bdae6f8ca1c",
+          "IPY_MODEL_3f119d8e06b648209f429994b6a6c10b",
+          "IPY_MODEL_c67902977ce644a5901e0100180e30ce",
+          "IPY_MODEL_83c2a8f7ce0e4504b7ae435931a0bd75",
+          "IPY_MODEL_ace5c600344d4f049a3b42e8cfa2631c",
+          "IPY_MODEL_4038ee4f64944238b5415dd7ec6d2fd0",
+          "IPY_MODEL_8e22deb04ee6455087decd74def4ba22",
+          "IPY_MODEL_1e61806dc2884ad4b7291bf217c043cf",
+          "IPY_MODEL_79fa71e65c5349238e5a31481e1d4032",
+          "IPY_MODEL_f418c37edd3540409c7870d753c9d1a3",
+          "IPY_MODEL_bf9b6a8f77e64f5e8543afa2e73f387c",
+          "IPY_MODEL_7e679dc3abd14657a22de4bbaa3270a9",
+          "IPY_MODEL_afe2a3af6baf4d378929ea67f77100b0",
+          "IPY_MODEL_389f8f200e4743b9be3f7fdd6a319145",
+          "IPY_MODEL_02be38243094484e8f1ca57c38582844",
+          "IPY_MODEL_6de0926820634e9eb1340c387fbd4ec3",
+          "IPY_MODEL_969253e3eae046a3952bc9bbe6d0f712",
+          "IPY_MODEL_753bb829857d4bc78f9b7ce812002358",
+          "IPY_MODEL_9b81dfe6005b4c5c9172dd7b71781b77",
+          "IPY_MODEL_8722cd5a50cd4448ab0dfadc31800dff",
+          "IPY_MODEL_dbd256dd28b84486a2af457732ff8364",
+          "IPY_MODEL_586b2a2a2d2d4d54a25b19cbda1d74a9",
+          "IPY_MODEL_d54d915f17b240f4bcd9970e91a979d8",
+          "IPY_MODEL_b3833aec0e914e7486343d996dcc1dab",
+          "IPY_MODEL_3f239c14762d4763ba50c9416f850175",
+          "IPY_MODEL_942f4473f63640bfb3fb91c4a176cc0d"
+        ],
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    },
+    "332e391d9a074ab789824843416fbbd7": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "b7a6bafccf564037ae08f87a3fe7b9f4"}
+</script>
+
+</body>
+</html>
